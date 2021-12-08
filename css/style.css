@@ -16,17 +16,26 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 
 /* VARIÁVEIS */
 :root{
+	--color-text:#262626;
+	--font-family:Helvetica, Arial, sans-serif;
   
 }
 
 /*BODY*/
 body{
 
+
 }
 
 /*TOPO*/
 header{
-	
+	font-family: var(--font-family);
+	color: var(--color-text);
+	height: 50px;
+	margin: auto;
+	width: 100%;	
+	margin-top: -10px;
+
 }
 
 /*RODAPÉ*/
