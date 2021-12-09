@@ -23,6 +23,8 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 
 /*BODY*/
 body{
+	font-family: var(--font-family);
+	color: var(--color-text);
 
 
 }
@@ -31,13 +33,23 @@ body{
 header{
 	font-family: var(--font-family);
 	color: var(--color-text);
-	height: 50px;
-	margin: auto;
+	height: 80px;
+	
 	width: 100%;	
-	margin-top: -10px;
+	margin-top: 20px;
+	margin-left: 50px;
+	margin-bottom: 30px;
 
 }
+header>a>figure>img{
+	
+	width: 150px;
+	margin-left: 40px;
+	margin-top: 10px;
 
+	
+	
+}
 /*RODAPÉ*/
 footer{
 
@@ -47,14 +59,101 @@ footer{
 main{
 	
 }
-	main .profile-content{
+.profile-content{
+	
+	display: flex;
 
-	}
 
-	main .highlighted-stories{
+}
+.profile-photo{
+	width: 30%;
+	margin: auto;
+	padding: auto;
+	text-align: center;
 
-	}
 
-	main .profile-posts{
+}
 
-	}
+.profile-photo>figure>img{
+	
+	border-radius: 50%;
+	width: 200px;
+	border: 7px solid rgb(216, 211, 211)
+	
+
+}
+.profile-info{
+	display: flex;
+	flex-direction:column-reverse;
+	height: 236px;
+	justify-content: space-between;
+	margin-top: px;
+
+	
+	
+
+
+
+}
+.profile-info>h1{
+	margin-bottom: -10px;
+	
+
+}
+.profile-info>h2{
+	
+	margin-bottom: -10px;
+
+}
+.sobre-nos>li{
+	margin-bottom: -10px;
+	
+}
+
+.order-1{
+	order: 3;
+	
+	
+}
+.order-2{
+	
+	order:2
+}
+.order-3{
+	
+	order:1
+}
+.profile-data {
+	display:flex;
+	margin-top: 10px;
+	
+	
+	
+
+
+}
+.profile-data>p{
+	justify-content: space-between;
+	margin-right: 10px; 
+	
+	
+
+
+
+}
+
+.profile-data>p>span{
+	font-weight:bold;
+	
+
+
+
+}
+main .highlighted-stories{
+
+}
+
+main .profile-posts{
+
+}
+	
