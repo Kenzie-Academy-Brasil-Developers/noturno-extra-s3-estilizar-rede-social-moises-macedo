@@ -36,14 +36,11 @@ body{
 	display: flex;
 	flex-direction: column;
 	text-align: left;
-
-
 }
 .highlighted-stories>ul>li{
 	display: inline-block;
 	text-align: center;
 	font-weight: bold;
-
 }
 .highlighted-stories>ul>li>figure>img{
 	width: 77px;
@@ -121,7 +118,6 @@ main{
 	width: 200px;
 	border: 7px solid rgb(216, 211, 211)
 
-
 }
 .profile-info{
 	display: flex;
@@ -188,10 +184,7 @@ main .highlighted-stories{
 	flex-direction: row;
 	position: relative;
 	margin-top: 50px;
-	
-
-	
-    
+	    
 }
 .profile-posts>nav::after{
 	display: flex;
@@ -418,9 +411,7 @@ main .highlighted-stories{
 		flex-direction: row;
 		position: relative;
 		margin-top: 50px;
-		
-	
-		
+				
 		
 	}
 	.profile-posts>nav::after{
