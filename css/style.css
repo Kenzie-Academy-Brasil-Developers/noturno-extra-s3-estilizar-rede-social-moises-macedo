@@ -22,10 +22,7 @@ body{
 
 header>a>figure>img{
 	width: 100%;
-	max-width: 200px;
-	min-width: 150px;
-	
-	
+	max-width:200px;
 
 }
 
@@ -36,21 +33,21 @@ header>a>figure>img{
 	display: flex;
 	flex-direction: row;
 
-
 }
 
 .profile-photo>figure>img{
 	width: 100%;
-	max-width: 200px;
-	min-width: 150px;
+	max-width: 250px;
+	min-width: 100px;	
 	border-radius: 100%;
-	border: 5px solid var(--color-border)
+	border: 5px solid var(--color-border);
+	background-clip: padding-box;
 	
 }
 .profile-photo>figure>img:hover{
 	cursor: pointer;
-	width: 105%;
-	max-width: 350px;
+	width: 99%;
+	max-width: 350px;	
 
 }
 
@@ -58,6 +55,7 @@ header>a>figure>img{
 .profile-info{
 	display: flex;
 	flex-direction: column-reverse;
+	flex-wrap: wrap;
 
 }
 
@@ -84,7 +82,8 @@ header>a>figure>img{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	width: 300px;
+	width: 100%;
+	max-width: 300px;
 
 }
 
@@ -139,19 +138,104 @@ header>a>figure>img{
 	margin-top: 20px;
 	margin-bottom: 20px;
 	text-align: center;
+	max-width: 935px;
 
 
-	
 }
 
 .profile-posts>nav>a{
 	color: var(--cor-de-texto);
-	padding: 0px 40px 0px 40px;
+	padding: 0px 10px 0px 10px;
 	
 	
 }
 .profile-posts>nav>a:hover{
 	border-top: 2px solid black;
+	
 
 }
+
+/*LISTA DE POSTS*/
+
+.profile-posts>ul{
+	display: flex;	
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 100px;
+
+}
+.profile-posts>ul>li>a>figure>img{
+	width: 100%;
+	max-width: 293px;
+	height: 100%;
+	max-height: 293px;
+
+}
+
+/*RODAPÉ*/
+
+.footer-nav{
+	display: flex;
+	justify-content: space-evenly;
+	color: var(--cor-de-texto);
+	flex-wrap: wrap;	
+	text-align: center;
+	margin-top: 80px;
+}
+
+.copyright{
+	color: var(--cor-de-texto);
+	text-align: center;
+}
+
+
+/*TABLET*/
+
+@media screen and (max-width: 768px){
+	.highlighted-stories>ul{
+		display: flex;	
+		justify-content: center;
+		text-align: center;
+	}
+
+	header{
+		text-align: center;
+		margin: auto;
+
+
+	}
+
+
+}
+@media screen and (max-width: 480px){
+	.profile-info{
+		margin:10px 10px;
+		justify-content: center;
+    	align-items: center;
+	}
+	.profile-photo{
+		max-height: 200px;
+		margin: auto;
+	}
+	
+	.profile-content{
+		display: flex;
+		flex-direction: column;
+		margin: auto;
+	}
+	.profile-data{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: none;
+		max-width: none;
+		
+	
+	}
+
+
+
+
+}
+
 
