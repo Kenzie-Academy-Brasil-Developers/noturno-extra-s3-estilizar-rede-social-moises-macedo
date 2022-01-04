@@ -1,51 +1,241 @@
-/*
-Theme Name: Instagram
-Author: Kenzie Academy
-Author URI: kenzie.com.br;
-Version: 1.0
- 
---------------------------------------------
-SUGESTÃO DE ESTRUTURAÇÃO BASE 
---------------------------------------------
-**** DECLARAÇÃO DE VARIÁVEIS
-**** BODY
-**** TOPO
-**** RODAPÉ
-**** PÁGINA INICIAL
-*/
-
-/* VARIÁVEIS */
 :root{
-  
+	--cor-de-texto:#262626;
+	--fonte-de-texto: Helvetica, Arial, sans-serif;
+	--color-border:rgb(207, 204, 204);
+	
 }
 
-/*BODY*/
 body{
+	color: var(--cor-de-texto);
+	font-family: var(--fonte-de-texto);
+	margin: auto;
+	width: 100%;
+	max-width: 935px;
+
+}
+
+
+
+/*CABECALHO*/
+
+
+
+header>a>figure>img{
+	width: 100%;
+	max-width:200px;
 
 }
 
 /*TOPO*/
-header{
+
+.profile-content{
 	
+	display: flex;
+	flex-direction: row;
+
+}
+
+.profile-photo>figure>img{
+	width: 100%;
+	max-width: 250px;
+	min-width: 100px;	
+	border-radius: 100%;
+	border: 5px solid var(--color-border);
+	background-clip: padding-box;
+	
+}
+.profile-photo>figure>img:hover{
+	cursor: pointer;
+	width: 99%;
+	max-width: 350px;	
+
+}
+
+
+.profile-info{
+	display: flex;
+	flex-direction: column-reverse;
+	flex-wrap: wrap;
+
+}
+
+.order-1{
+	order: 2;
+
+}
+
+.order-2{
+	order:1;
+	margin-top: -5px;
+}
+
+.sobre-nos{
+	flex-wrap: wrap;
+
+}
+.sobre-nos>li>p{
+	margin-top: -10px;
+	
+}
+
+.profile-data{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 300px;
+
+}
+
+.profile-data>p>span{
+	font-weight: bold;
+}
+
+/*DESTAQUES DO USUÁRIO*/
+
+
+
+.highlighted-stories>ul{
+	display: flex;	
+	justify-content: flex-start;
+	text-align: center;
+	
+}
+.highlighted-stories>ul>li>figure{
+	
+	display: flex;
+	flex-direction: column;	
+	justify-content: flex-start;
+	margin-left: 10px;
+	
+}
+
+
+
+.highlighted-stories>ul>li>figure>img{
+	width: 100%;
+	max-width: 77px;
+	border-radius: 100%;
+	border: 3px solid var(--color-border);
+	box-sizing: border-box;
+	margin-bottom: 10px;
+	
+}
+.highlighted-stories>ul>li>figure>img:hover{
+	width: 101%;
+	max-width: 76px;	
+	cursor: pointer;
+		
+}
+
+/*POSTS DO USUÁRIO*/
+
+.profile-posts>nav{
+	border-top: 1px solid var(--color-border);
+	display: flex;
+	justify-content: space-evenly;
+	color: var(--cor-de-texto);	
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+	max-width: 935px;
+
+
+}
+
+.profile-posts>nav>a{
+	color: var(--cor-de-texto);
+	padding: 0px 10px 0px 10px;
+	
+	
+}
+.profile-posts>nav>a:hover{
+	border-top: 2px solid black;
+	
+
+}
+
+/*LISTA DE POSTS*/
+
+.profile-posts>ul{
+	display: flex;	
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 100px;
+
+}
+.profile-posts>ul>li>a>figure>img{
+	width: 100%;
+	max-width: 293px;
+	height: 100%;
+	max-height: 293px;
+
 }
 
 /*RODAPÉ*/
-footer{
 
+.footer-nav{
+	display: flex;
+	justify-content: space-evenly;
+	color: var(--cor-de-texto);
+	flex-wrap: wrap;	
+	text-align: center;
+	margin-top: 80px;
 }
 
-/*PÁGINA INICIAL*/
-main{
+.copyright{
+	color: var(--cor-de-texto);
+	text-align: center;
+}
+
+
+/*TABLET*/
+
+@media screen and (max-width: 768px){
+	.highlighted-stories>ul{
+		display: flex;	
+		justify-content: center;
+		text-align: center;
+	}
+
+	header{
+		text-align: center;
+		margin: auto;
+
+
+	}
+
+
+}
+@media screen and (max-width: 480px){
+	.profile-info{
+		margin:10px 10px;
+		justify-content: center;
+    	align-items: center;
+	}
+	.profile-photo{
+		max-height: 200px;
+		margin: auto;
+	}
 	
+	.profile-content{
+		display: flex;
+		flex-direction: column;
+		margin: auto;
+	}
+	.profile-data{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: none;
+		max-width: none;
+		
+	
+	}
+
+
+
+
 }
-	main .profile-content{
 
-	}
 
-	main .highlighted-stories{
-
-	}
-
-	main .profile-posts{
-
-	}

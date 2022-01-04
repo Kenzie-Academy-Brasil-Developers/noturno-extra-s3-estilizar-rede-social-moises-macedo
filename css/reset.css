@@ -1,0 +1,14 @@
+html, body, div, span, section, menu, nav, ol, ul, li, header, head, footer,a{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    
+
+}
+a{
+    color: black;
+}
+
+
